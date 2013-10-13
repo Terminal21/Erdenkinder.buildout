@@ -3,6 +3,12 @@ Erdenkinder CMS buildout
 
 Buildout script for the Erdenkinder CMS
 
+## Prerequisites
+
+Install tools
+
+> aptitude install python-virtualenv python-mysqldb
+
 ## Setup the Erdenkinder CMS
 
 Clone repository
@@ -10,6 +16,12 @@ Clone repository
 > git clone https://github.com/Terminal21/Erdenkinder.buildout.git
 
 > cd Erdenkinder.buildout
+
+Set passwords
+
+> cp secrets.cfg.example secrets.cfg
+
+Edit settings in secrets.cfg and fill in usernames and passwords
 
 Create environment
 
@@ -27,7 +39,7 @@ Run buildout
 
 Run application server
 
-> ./bin/pserve app.ini
+> ./bin/py ./bin/pserve app.ini
 
 ## Administration
 
