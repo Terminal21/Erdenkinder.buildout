@@ -1,0 +1,3 @@
+#/bin/sh
+
+/usr/bin/duplicity --ssl-no-check-certificate --no-encryption ${buildout:directory}/backups webdavs://${settings:t-online_user}:${settings:t-online_password}@webdav.mediencenter.t-online.de/Backups/Erdenkinder
