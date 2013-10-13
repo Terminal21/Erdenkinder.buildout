@@ -3,6 +3,8 @@
 *.swp
 # Kotti
 Kotti.db
+secrets.cfg
+app.ini
 
 # C extensions
 *.so
